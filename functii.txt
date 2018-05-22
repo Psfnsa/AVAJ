@@ -1,0 +1,12 @@
+Pt compilare proiect cu -sourcepath:
+Directory tree:
+src
+|--avaj
+|--t
+
+find . -name "*.java" > sources.txt
+javac -d t -sourcepath avaj @sources.txt
+
+In folderul t o sa creeze un folder avaj cu toate clasele compilate. Din t se ruleaza cu:
+
+java avaj.Simulator
